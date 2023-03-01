@@ -1,0 +1,108 @@
+.header {
+    grid-area: header;
+    background: #3F4257;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+.pageTitle {
+    margin: 25px;
+    left: 220px;
+    position: relative;
+    color: #fff;
+    font-size: .875rem;
+    text-transform: uppercase;
+}
+
+.headerItems {
+    display: flex;
+    position: relative;
+}
+
+.searchField {
+    right: 100px;
+    position: relative;
+    top: -20px;
+}
+
+.findFriends {
+    padding: 25px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+}
+
+.controlBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.searchField input[type=text] {
+    margin-top: 4px;
+    width: 150px;
+    height: 60px;
+    border: none;
+    background-color: #494C62;
+    background-image: url('search.png');
+    background-repeat: no-repeat;
+    background-position: 140px 23px;
+    padding-left: 10px;
+    font-size: 10px;
+    color: #6C6C6C;
+
+
+}
+
+.headerIcons {
+    margin-right: 30px;
+}
+
+.label {
+    padding: 2px 0px 4px 8px;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 15px;
+    font-weight: 700;
+    transform: scale(0.7);
+    position: relative;
+    top: -40px;
+    left: 12px;
+}
+
+.loginButton {
+    border-radius: 20px;
+    padding: 5px 25px 10px 25px;
+    background-color: #515471;
+    color: #FFFFFF;
+}
+
+.loginButtonCont {
+    margin: 20px 100px 20px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .pageTitle {
+        left: 55px;
+    }
+
+    .searchField input[type=text] {
+        width: 85px;
+        padding-left: 25px;
+        margin-left: 250px;
+        background-position: 5px 23px;
+    }
+
+    .findFriends {
+        min-width: 119px;
+    }
+    .accButtonBlock {
+        min-width: 127px;
+    }
+}
